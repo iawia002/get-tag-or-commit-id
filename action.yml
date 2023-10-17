@@ -1,19 +1,19 @@
 name: 'Get tag or commit id'
 description: 'Gets the tag name if it exists otherwise returns the commit id'
 author: 'iawia002'
-
+branding:
+  color: green
+  icon: git-pull-request
 inputs:
   length:
     description: 'the expected length of the commit id'
     required: false
     default: '7'
-
 outputs:
   id:
     description: 'the value of the tag or commit id'
   type:
     description: 'the type of value (tag/pr/commit)'
-
 runs:
   using: node20
   main: dist/index.js
