@@ -1,18 +1,18 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Get tag or commit id'
+description: 'Gets the tag name if it exists otherwise returns the commit id'
+author: 'iawia002'
 
-# Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
-    required: true
-    default: '1000'
+  length:
+    description: 'the expected length of the commit id'
+    required: false
+    default: '7'
 
-# Define your outputs here.
 outputs:
-  time:
-    description: 'Your output description here'
+  id:
+    description: 'the value of the tag or commit id'
+  type:
+    description: 'the type of value (tag/pr/commit)'
 
 runs:
   using: node20
