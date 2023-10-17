@@ -1,7 +1,6 @@
 # Get tag or commit id
 
-![GitHub Super-Linter](https://github.com/actions/typescript-action/actions/workflows/linter.yml/badge.svg)
-![CI](https://github.com/actions/typescript-action/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/iawia002/get-tag-or-commit-id/actions/workflows/ci.yml/badge.svg)](https://github.com/iawia002/get-tag-or-commit-id/actions/workflows/ci.yml)
 
 `get-tag-or-commit-id` is a GitHub Action that gets the tag name if it exists otherwise returns the commit id.
 
