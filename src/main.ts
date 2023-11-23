@@ -23,6 +23,8 @@ export async function run(): Promise<void> {
       id = context.sha.substring(0, length)
     }
 
+    console.log(`type: ${type}`)
+    console.log(`id: ${id}`)
     core.setOutput('type', type)
     core.setOutput('id', id)
   } catch (error) {
