@@ -29787,6 +29787,8 @@ async function run() {
             type = 'commit';
             id = github_1.context.sha.substring(0, length);
         }
+        console.log(`type: ${type}`);
+        console.log(`id: ${id}`);
         core.setOutput('type', type);
         core.setOutput('id', id);
     }
